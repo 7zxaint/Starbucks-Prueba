@@ -17,11 +17,13 @@ body {
 
 }
 
-section {view-timeline: --scroll;}
+section {
+    view-timeline: --scroll;
+}
 
 header {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
@@ -143,11 +145,15 @@ header {
 }
 
 @keyframes scale {
-    to { scale: 1.5; }
+    to {
+        scale: 1.5;
+    }
 }
 
 @keyframes invisible {
-    to { opacity: 0; }
+    to {
+        opacity: 0;
+    }
 }
 
 h2 {
@@ -192,7 +198,7 @@ h2 {
     margin: 10px 0;
     line-height: 1.6;
     text-align: justify;
-    
+
 }
 
 .information .extra button {
@@ -200,7 +206,7 @@ h2 {
     margin-top: 20px;
     border-radius: 10px;
     background: rgba(25, 128, 75, 0.9);
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1rem;
     border: none;
@@ -209,22 +215,59 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .logo-container {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    .navbar ul {
+        flex-direction: row; 
+        justify-content: flex-start;
+    }
+
+    .navbar li {
+        margin: 0 5px; 
+    }
+
+    .logo {
+        max-width: 80px; 
+    }
+
+    .logo-container a {
+        font-size: 1.5em; 
+    }
+
+
     .text-container span {
-        font-size: 2rem; 
+        font-size: 1.75rem;
     }
+
     .text-container p {
-        font-size: 1rem;
+        font-size: 0.75rem;
+        margin-top: 75px;
+        margin-bottom: 50px;
     }
+
+    .text-container button {
+        padding: 10px 30px;
+    }
+
     .cards {
-        width: 90%; 
+        width: 90%;
     }
+
     .information {
         flex-direction: column;
         align-items: center;
     }
+
     .information img {
-        max-width: 80%; 
+        max-width: 80%;
         margin-bottom: 20px;
+    }
+
+    .information button {
+        margin: auto;
     }
 }
 
@@ -254,7 +297,8 @@ h2 {
     border-top-right-radius: 60px;
     box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden; /* Added to contain child elements */
+    overflow: hidden;
+    /* Added to contain child elements */
 }
 
 .card:hover {
@@ -295,19 +339,19 @@ h2 {
 
 .card .content h2 {
     text-align: center;
-    font-size: 1.5em; 
-    color: #fff; 
+    font-size: 1.5em;
+    color: #fff;
     transform: translateY(10px);
 }
 
 .card .content button {
     padding: 10px 25px;
-    border: none; 
-    background-color: rgba(255, 255, 255, 0.8); 
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #1b4f34;
     border-radius: 20px;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -319,7 +363,7 @@ h2 {
 
 @media (max-width: 480px) {
     .cards .card {
-        width: 100%; 
+        width: 100%;
         margin-bottom: 20px;
     }
 }

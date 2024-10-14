@@ -2,6 +2,17 @@
 <html lang="es">
 
 <head>
+    <!-- Hola persona chismosa, este sitio no es original, ha sido creado con fines educativos. Creada por 7zxaint
+     
+$$$$$$$$\                             $$\            $$\          
+\____$$  |                            \__|           $$ |         
+    $$  /$$$$$$$$\ $$\   $$\ $$$$$$\  $$\ $$$$$$$\ $$$$$$\        
+   $$  / \____$$  |\$$\ $$  |\____$$\ $$ |$$  __$$\\_$$  _|       
+  $$  /    $$$$ _/  \$$$$  / $$$$$$$ |$$ |$$ |  $$ | $$ |         
+ $$  /    $$  _/    $$  $$< $$  __$$ |$$ |$$ |  $$ | $$ |$$\      
+$$  /    $$$$$$$$\ $$  /\$$\\$$$$$$$ |$$ |$$ |  $$ | \$$$$  |     
+\__/     \________|\__/  \__|\_______|\__|\__|  \__|  \____/   -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>HomePage | Starbucks</title>
@@ -11,49 +22,57 @@
     <link rel="stylesheet" href="scripts/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
 
-    <!-- Meta para SEO -->
+    <!-- SEO -->
     <meta name="description" content="Bienvenido a Starbucks. Descubre nuestra historia, productos y más.">
     <meta name="keywords" content="Starbucks, café, bebidas, historia, tienda">
     <meta name="author" content="Tu Nombre">
 
-    <!-- Open Graph para redes sociales -->
+    <!-- OpenGraph -->
     <meta property="og:title" content="Prueba - Starbucks">
     <meta property="og:description" content="Bienvenido a Starbucks. Descubre nuestra historia, productos y más.">
     <meta property="og:image" content="assets/logo.webp">
     <meta property="og:url" content="https://www.starbucks.com.mx">
 
-    <!-- Scripts adicionales -->
+    <!-- EEEEEEEXTRAAAAAS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init();
-        });// Inicializa AOS
+        });
     </script>
 </head>
 
 <body>
     <header>
         <div class="logo-container">
-            <img src="assets/logo.webp" alt="logo.webp" class="logo">
-            <a href="#menu"><i class='bx bxs-food-menu'></i> Menu</a>
-            <a href="#"><i class='bx bxs-party'></i> Rewards</a>
+            <img style="height: 50px;" src="assets/logo.webp" alt="logo.webp" class="logo">
+            <a id="menu-text" href="#menu"><i class='bx bxs-food-menu'></i> Menu</a> <!-- Ocultar -->
+            <a id="rewards-text" href="#"><i class='bx bxs-party'></i> Rewards</a> <!-- Ocultar -->
+
+            <a id="menu-icon" style="display: none;" href="#menu"><i class='bx bxs-food-menu'></i></a> <!-- Mostrar -->
+            <a id="rewards-icon" style="display: none;" href="#"><i class='bx bxs-party'></i></a> <!-- Mostrar -->
+            <a id="localizar-icon"><i class='bx bxs-map'></i></a> <!-- Mostrar -->
+            <a id="ingresar-icon"><i class='bx bx-log-in'></i></a> <!-- Mostrar -->
+
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home"><i class='bx bxs-map'></i> Localizar Tienda</a></li>
-                <li><a href="#menu">Ingresar</a></li>
-                <li><a href="#contact">Unete</a></li>
+                <li id="localizar-text"><a href="#home"><i class='bx bxs-map'></i> Localizar Tienda</a></li>
+                <!-- Ocultar -->
+                <li id="ingresar-text"><a href="#">Ingresar</a></li>
+                <li id="unete-text"><a href="#">Unete</a></li>
             </ul>
         </nav>
     </header>
+
 
     <main>
         <section class="home" id="home">
             <video src="assets/video_oficial.mp4" x-webkit-airplay="deny" autoplay playsinline loop muted
                 preload="auto">
-                Your browser does not support the video tag.
+                no jala el video en el navegador
             </video>
             <div class="text-container">
                 <span>STARBUCKS LATTE POR TI</span>
@@ -145,6 +164,7 @@
         </section>
     </main>
 
+    <script src="scripts/check.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

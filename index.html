@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>HomePage | Starbucks</title>
+
+    <link rel="shortcut icon" href="assets/logo.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="scripts/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+    <!-- Meta para SEO -->
+    <meta name="description" content="Bienvenido a Starbucks. Descubre nuestra historia, productos y más.">
+    <meta name="keywords" content="Starbucks, café, bebidas, historia, tienda">
+    <meta name="author" content="Tu Nombre">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Prueba - Starbucks">
+    <meta property="og:description" content="Bienvenido a Starbucks. Descubre nuestra historia, productos y más.">
+    <meta property="og:image" content="assets/logo.webp">
+    <meta property="og:url" content="https://www.starbucks.com.mx">
+
+    <!-- Scripts adicionales -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init();
+        });// Inicializa AOS
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.webp" alt="logo.webp" class="logo">
+            <a href="#menu"><i class='bx bxs-food-menu'></i> Menu</a>
+            <a href="#"><i class='bx bxs-party'></i> Rewards</a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home"><i class='bx bxs-map'></i> Localizar Tienda</a></li>
+                <li><a href="#menu">Ingresar</a></li>
+                <li><a href="#contact">Unete</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <video src="assets/video_oficial.mp4" x-webkit-airplay="deny" autoplay playsinline loop muted
+                preload="auto">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-container">
+                <span>STARBUCKS LATTE POR TI</span>
+                <p>Por nuestro amor al café, a nuestros partners y a nuestros clientes<br>¡Estamos felices de verte
+                    todos los días!</p>
+                <button><i class='bx bx-cart-alt'></i> COMPRAR</button>
+            </div>
+        </section>
+
+        <section id="about" data-aos="fade-up">
+            <div class="information">
+                <img src="assets/history.webp" alt="">
+                <div class="extra">
+                    <span>Nuestra Historia</span>
+                    <p>Fundada en 1971 en Seattle, nuestra misión ha sido inspirar y nutrir el espíritu humano, una
+                        persona y una taza a la vez. Nos apasiona ofrecer café de la más alta calidad, cultivado de
+                        manera sostenible y cuidadosamente seleccionado de las mejores regiones productoras del mundo.
+                        Desde nuestros orígenes hasta la experiencia en nuestras tiendas, nos dedicamos a crear un
+                        ambiente acogedor donde nuestros clientes se sientan como en casa. En Starbucks, no solo
+                        servimos café; creamos conexiones.</p>
+                    <button>Leer Más</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu" data-aos="fade-up">
+            <h2>Algunos de nuestros productos más populares</h2>
+            <div class="cards">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="imgbox">
+                        <img src="assets/cafe1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="imgbox">
+                        <img src="assets/cafe3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="imgbox">
+                        <img src="assets/cafe2.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-down" data-aos-delay="400">
+                    <div class="imgbox">
+                        <img src="assets/cafe3.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-down" data-aos-delay="500">
+                    <div class="imgbox">
+                        <img src="assets/cafe4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card" data-aos="fade-down" data-aos-delay="600">
+                    <div class="imgbox">
+                        <img src="assets/cafe1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>CAFE</h2>
+                        <button><i class='bx bx-cart-download'></i> Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
